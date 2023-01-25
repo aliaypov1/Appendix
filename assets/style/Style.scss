@@ -1,0 +1,143 @@
+
+  /* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --sky-blue: #1d9bf0;
+  --dark: #151a1f;
+  --disabled: #eff3f4;
+  --grey: #dedede;
+  --sky-light: #65bbf5;
+}
+body {
+  font-family: sans-serif;
+  background-color: var(--sky-light);
+}
+ 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: none;
+}
+/* Reset CSS */
+/* UNIQUE */
+.container {
+  max-width: 370px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+/* UNIQUE */
+.header {
+  padding: 20px 0;
+  &__container {
+    text-align: center;
+  }
+  &__title {
+    font-size: 32px;
+    color: var(--dark);
+  }
+}
+.form-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--disabled);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 19px 23px 11px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 19px 23px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 19px 23px 11px 0px rgba(0,0,0,0.75);
+
+  & label {
+    width: 100%;
+    text-align: center;
+  }
+  &__inp {
+    width: 80%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+    margin-bottom: 7px;
+  }
+  &__btn {
+    width: 150px;
+    height: 40px;
+    background-color: var(--sky-blue);
+    color: var(--disabled);
+    font-size: 20px;
+    border-radius: 3px;
+    margin-top: 5px;
+  }
+}
+ 
+.twitt {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--disabled);
+  margin-top: 30px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 15px;
+  box-shadow: 19px 23px 11px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 19px 23px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 19px 23px 11px 0px rgba(0,0,0,0.75);
+
+  &__avatar {
+    width: 100%;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__delete {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    transition: .3s;
+    opacity: .3;
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+.heart{
+  font-size: 35px;
+  color: gray;
+  opacity: 0.3;
+}
+.heart1{
+  font-size: 35px;
+  color: gray;
+  opacity: 0.3;
+}
+.heart2{
+  font-size: 35px;
+  color: gray;
+  opacity: 0.3;
+}
+.stars{
+  display: flex;
+  column-gap: 12px;
+  margin-bottom: 10px;
+}
+
+
